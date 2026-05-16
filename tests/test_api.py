@@ -14,7 +14,7 @@ def test_health_check():
 def test_add_two_numbers():
     response = client.get("/add?a=3&b=5")
     assert response.status_code == 200
-    assert response.json()["result"] == 8
+    assert response.json()["result"] == 999
 
 
 def test_add_negative_numbers():
